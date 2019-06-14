@@ -7,7 +7,7 @@ class Gerenciador(tk.Tk):
 
 	def __init__(self,*args,**wargs):
 		tk.Tk.__init__(self,*args,**wargs)
-		tk.Tk.iconbitmap(self,default="C:\\Users\wellington\Desktop\Tkinter\images\icone.ico" )
+		tk.Tk.iconbitmap(self,default="C:\\Users\NOME\Desktop\Tkinter\images\icone.ico" )
 		tk.Tk.wm_title(self,"Login")
 		#tk.Tk.background='black'
 		self.auto = self
@@ -41,7 +41,7 @@ class LoginInicial(Frame):
                 Frame.__init__(self,parent)
                 self.frame_atual = Frame(self, pady=130)
                 self.frame_atual.pack()
-                self.photo = PhotoImage(file = 'C:\\Users\wellington\Desktop\Tkinter\images\\telaLogin.png')
+                self.photo = PhotoImage(file = 'C:\\Users\NOME\Desktop\Tkinter\images\\telaLogin.png')
                 self.foto = Label(self.frame_atual, image = self.photo ,padx=300)
                 self.foto.pack()
                 self.userText = Label(self.frame_atual, text='Usuário')
@@ -61,7 +61,7 @@ class LoginInicial(Frame):
                 #self.sair.pack()
                 self.sair.grid(row=0,column=10)
         def Verifica(self,controler):
-                db = shelve.open('C:\\Users\\wellington\\Desktop\\Tkinter\\arquivosdb\\login\\login.db')
+                db = shelve.open('C:\\Users\\NOME\\Desktop\\Tkinter\\arquivosdb\\login\\login.db')
                 if self.userForm.get()=='':
                     messagebox.showwarning('Aviso', 'Preencha o Usuário')
                 elif(self.userForm.get() in db['User'] and self.passForm.get() in db['Pass']):
