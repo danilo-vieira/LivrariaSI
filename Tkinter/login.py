@@ -7,7 +7,7 @@ class Gerenciador(tk.Tk):
 
 	def __init__(self,*args,**wargs):
 		tk.Tk.__init__(self,*args,**wargs)
-		tk.Tk.iconbitmap(self,default="C:\\Users\NOME\Desktop\Tkinter\images\icone.ico" )
+		tk.Tk.iconbitmap(self,default="C:\\Users\editado\Desktop\Tkinter\images\icone.ico" )
 		tk.Tk.wm_title(self,"Login")
 		#tk.Tk.background='black'
 		self.auto = self
