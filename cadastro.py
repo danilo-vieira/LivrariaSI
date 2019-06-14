@@ -2,11 +2,15 @@ from tkinter import *
 import tkinter as tk
 from tkinter import messagebox
 import shelve
+import os
+
+path = os.path.dirname(os.path.abspath(__file__))
+
 class Gerenciador(tk.Tk):
 
 	def __init__(self,*args,**wargs):
 		tk.Tk.__init__(self,*args,**wargs)
-		tk.Tk.iconbitmap(self,default="C:\\Users\danil\Desktop\Tkinter\images\icone.ico" )
+		tk.Tk.iconbitmap(self,default = path + '\images\icone.ico' )
 		tk.Tk.wm_title(self,"Cadastro de Funcionários")
 		tk.Tk.background='black'
 		self.auto = self
@@ -40,7 +44,7 @@ class TelaCadastro(Frame):
                 Frame.__init__(self,parent)
                 self.frame_atual = Frame(self, pady=60)
                 self.frame_atual.pack()
-                self.photo = PhotoImage(file = 'C:\\Users\danil\Desktop\Tkinter\images\\telaAdmin.png')
+                self.photo = PhotoImage(file = path +'\images\\telaAdmin.png')
                 self.foto = Label(self.frame_atual, image = self.photo ,padx=300)
                 self.foto.pack()
                 self.userText = Label(self.frame_atual, text='Nome do funcionário')
@@ -61,7 +65,7 @@ class TelaCadastro(Frame):
                 self.bt.grid(row=0,column=0)
 
         def Cadastra(self,controler):
-                self.db = shelve.open('C:\\Users\\danil\\Desktop\\Tkinter\\arquivosdb\\login\\login.db')
+                self.db = shelve.open(path + '\\arquivosdb\\login\\login.db')
                 self.user = self.db['User']
                 self.senha = self.db['Pass']
                 if self.userForm.get()=='':
