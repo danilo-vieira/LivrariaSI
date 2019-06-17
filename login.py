@@ -64,15 +64,19 @@ class LoginInicial(Frame):
                 #self.sair.pack()
                 self.sair.grid(row=0,column=10)
         def Verifica(self,controler):
-                db = shelve.open(path + '\\arquivosdb\\login\\login.db')
+                self.db = shelve.open(path + '\\arquivosdb\\login\\login.dat')
                 if self.userForm.get()=='':
-                    messagebox.showwarning('Aviso', 'Preencha o Usuário')
-                elif(self.userForm.get() in db['User'] and self.passForm.get() in db['Pass']):
-                    controler.trocar_janela_por(FuncionarioOp)
-                elif(self.userForm.get() not in db['User']):
-                    messagebox.showwarning("Aviso", "Usuário invalido!")
-                else:
-                    messagebox.showwarning("Aviso", "Senha invalida!")
+                    messagebox.showwarning('Aviso', 'Preencha o Usuário!')
+                elif self.passForm.get()=='':
+                    messagebox.showwarning('Aviso', 'Preencha a Senha!')
+                elif(self.userForm.get() in self.db):
+                    if(self.passForm.get() == self.db[self.userForm.get()]):
+                        self.db.close()
+                        controler.trocar_janela_por(FuncionarioOp)
+                    else:
+                        messagebox.showerror("Aviso", "Senha invalida!")
+                elif(self.userForm.get() not in self.db):
+                    messagebox.showerror("Aviso", "Usuário invalido!")
 
 class FuncionarioOp(Frame):
         def __init__(self,parent,controler):
