@@ -65,9 +65,7 @@ class TelaCadastro(Frame):
                 self.bt.grid(row=0,column=0)
 
         def Cadastra(self,controler):
-                self.db = shelve.open(path + '\\arquivosdb\\login\\login.db')
-                self.user = self.db['User']
-                self.senha = self.db['Pass']
+                self.db = shelve.open(path + '\\arquivosdb\\login\\login.dat')
                 if self.userForm.get()=='':
                     messagebox.showwarning('Aviso', 'Preencha o Usuario')
                 elif self.passForm.get()=='':
@@ -75,10 +73,9 @@ class TelaCadastro(Frame):
                 elif(self.passForm.get() != self.confForm.get()):
                     messagebox.showerror("Aviso", "As senhas não coincidem")
                 else:
-                    self.user.append(self.userForm.get())
-                    self.db['User'] = self.user
-                    self.senha.append(self.passForm.get())
-                    self.db['Pass'] = self.senha
+                    self.user = self.userForm.get()
+                    self.db[self.user] = self.passForm.get()
+                    self.db.close()
                     messagebox.showinfo('Concluído', 'O funcionário ' + self.userForm.get() + ' foi cadastrado')
 
 def main():
