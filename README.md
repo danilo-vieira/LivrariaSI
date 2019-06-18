@@ -1,5 +1,5 @@
-[![LivrariaSI](https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/64892376_332220464342171_7808059873349861376_n.jpg?_nc_cat=106&_nc_oc=AQkii1-lirgl1lqFdFFGBSN4reaLo88_-7HmHRMjfpeKUdW_0xGmyNo7XnC4iGaKRIQ&_nc_ht=scontent.fpcs1-1.fna&oh=3ce2e073fcd0055e187e41a4e4b5620e&oe=5DC184C3 "LivrariaSI")](https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/64892376_332220464342171_7808059873349861376_n.jpg?_nc_cat=106&_nc_oc=AQkii1-lirgl1lqFdFFGBSN4reaLo88_-7HmHRMjfpeKUdW_0xGmyNo7XnC4iGaKRIQ&_nc_ht=scontent.fpcs1-1.fna&oh=3ce2e073fcd0055e187e41a4e4b5620e&oe=5DC184C3 "LivrariaSI")
-
+<p align="center">[![LivrariaSI](https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/64892376_332220464342171_7808059873349861376_n.jpg?_nc_cat=106&_nc_oc=AQkii1-lirgl1lqFdFFGBSN4reaLo88_-7HmHRMjfpeKUdW_0xGmyNo7XnC4iGaKRIQ&_nc_ht=scontent.fpcs1-1.fna&oh=3ce2e073fcd0055e187e41a4e4b5620e&oe=5DC184C3 "LivrariaSI")](https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/64892376_332220464342171_7808059873349861376_n.jpg?_nc_cat=106&_nc_oc=AQkii1-lirgl1lqFdFFGBSN4reaLo88_-7HmHRMjfpeKUdW_0xGmyNo7XnC4iGaKRIQ&_nc_ht=scontent.fpcs1-1.fna&oh=3ce2e073fcd0055e187e41a4e4b5620e&oe=5DC184C3 "LivrariaSI")
+</p>
 # LivrariaSI
 
 Projeto de software do sistema de uma livraria, para conclusão da disciplina Engenharia de Software II, pela Universidade Federal do Piaui - UFPI (CSHNB).
