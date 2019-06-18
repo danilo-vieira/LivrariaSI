@@ -47,7 +47,3 @@ Construção Da Validação De Compras  | 3 pts | OK
 Construção Do Campo De Busca De Livros | 3 pts | OK
 Gerar Compra  | 2 pts | OK
 Testes Finais  | 1 pts | OK
-
-
-
-####End
