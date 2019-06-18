@@ -16,7 +16,7 @@ class Gerenciador(tk.Tk):
 		self.container.pack(side="top",fill="both",expand=True)
 		self.container.grid_rowconfigure(0,weight=1)
 		self.container.grid_columnconfigure(0,weight=1)
-		self.TELAS = [LoginInicial, FuncionarioOp, AdcLivro, RmvLivro]
+		self.TELAS = [LoginInicial, FuncionarioOp, AdcLivro, RmvLivro, ValidaCompra]
 		self.frames = {}
 		for tela in (self.TELAS):
 			frame = tela(self.container,self)
@@ -90,15 +90,12 @@ class FuncionarioOp(Frame):
         self.addLivro.pack()
         self.removeLivro = Button(self.i, text = "Remover Livro", width = 13, command = lambda:controler.trocar_janela_por(RmvLivro))
         self.removeLivro.pack()
-        self.validaCompra = Button(self.i, text = "Validar Compra", width = 13, command = self.Alerta)
+        self.validaCompra = Button(self.i, text = "Validar Compra", width = 13, command = lambda:controler.trocar_janela_por(ValidaCompra))
         self.validaCompra.pack()
         self.subframe = Frame(self.i)
         self.subframe.pack()
         self.voltar = Button(self.subframe, text = "Fazer Logout", width = 13, command = lambda:controler.trocar_janela_por(LoginInicial))
         self.voltar.pack(pady = 60)
-        
-    def Alerta(self):
-        messagebox.showwarning("Aviso", "Área não implementada!")
 
 class AdcLivro(Frame):
     def __init__(self,parent,controler):
@@ -198,6 +195,40 @@ class RmvLivro(Frame):
         else:
             messagebox.showerror("Ops", "Livro não encontrado!\nTalvez já tenha sido removido ;)")
 
+class ValidaCompra(Frame):
+    def __init__(self,parent,controler):
+        Frame.__init__(self,parent)
+        self.frame_atual = Frame(self, pady=70)
+        self.frame_atual.pack()
+        self.labelCentral = Label(self.frame_atual, text = "Validar compras", font = "Arial 32 bold ")
+        self.labelCentral.pack()
+        self.labelCentral = Label(self.frame_atual, text = "Digite o CPF", font = "Arial")
+        self.labelCentral.pack()
+        self.cpf = Entry(self.frame_atual, width = 25)
+        self.cpf.pack()
+        self.frame_botoes = Frame(self,pady=10)
+        self.frame_botoes.pack()
+        self.bt = Button(self.frame_botoes, text='Aprovar', command = lambda:self.Verifica(controler), width = 25)
+        self.bt.grid(row=0,column=0)
+
+    def Verifica(self, controler):
+        self.pedidos = shelve.open(path + '\\arquivosdb\\pedidos\\pedidos.dat')
+        self.livros = shelve.open(path + '\\arquivosdb\\livros\\livros.dat')
+        if(self.cpf.get() not in self.pedidos):
+            messagebox.showerror("Erro", "Não houve pedido encontrado")
+        else:
+            self.title = self.pedidos[self.cpf.get()]
+            self.qtd = self.livros[self.title]['qtd']
+            self.qtd -= 1
+            self.livros[self.title]['qtd'] = self.qtd
+            self.pedidos.close()
+            self.livros.close()
+            messagebox.showinfo("Concluído", "Pedido confirmado!")
+            self.cpf.delete(first = 0, last = END)
+            if(self.livros[self.title]['qtd'] == 0):
+                del self.livros[self.title]
+
+        
 
 def main():
 	app = Gerenciador()

@@ -77,6 +77,10 @@ class TelaCadastro(Frame):
                     self.db[self.user] = self.passForm.get()
                     self.db.close()
                     messagebox.showinfo('Concluído', 'O funcionário ' + self.userForm.get() + ' foi cadastrado')
+                    self.userForm.delete(first = 0, last = END)
+                    self.passForm.delete(first = 0, last = END)
+                    self.confForm.delete(first = 0, last = END)
+                    self.userForm.focus()
 
 def main():
 	app = Gerenciador()
