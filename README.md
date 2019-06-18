@@ -40,7 +40,7 @@ Foi utilizado para o presente desenvolvimento do projeto o modelo incremental no
 Código  | Pontos| Situação|
 ------------- | -------------|-------
  Criação login de Funcionários | 7 pts| ok
-Criação Do Crud De Livros  | 4 pts |
+Criação Do Crud De Livros  | 4 pts | ok
 Construção Da Validação De Compras  | 3 pts |
 Construção Do Campo De Busca De Livros | 3 pts |
 Gerar Compra  | 2 pts | 
