@@ -44,11 +44,11 @@ Foi utilizado para o presente desenvolvimento do projeto o modelo incremental no
 
 
 
-                    
+                   
 ###Tarefas alocada
                     
 Código  | Pontos| Situação|
-------------- | -------------
+------------- | -------------|-------
  Criação login de Funcionários | 7 pts| ok
 Criação Do Crud De Livros  | 4 pts |
 Construção Da Validação De Compras  | 3 pts |
@@ -56,7 +56,6 @@ Construção Do Campo De Busca De Livros | 3 pts |
 Gerar Compra  | 2 pts | 
 Testes Finais  | 1 pts |
 Modelar para Modelo Mvp |1 pts |
-
 
 ###Fluxograma de Criação do Projeto
 
