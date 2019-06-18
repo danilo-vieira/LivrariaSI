@@ -36,19 +36,6 @@ Foi utilizado para o presente desenvolvimento do projeto o modelo incremental no
 
 [![Classes](https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/64418289_332224791008405_1624337248159793152_n.jpg?_nc_cat=105&_nc_oc=AQkuGO3VJ1-nRURHW-DDZPV6LrerxkOFUbNj9IjQcqt-nrz2bm189rIlues6LIOqvD0&_nc_ht=scontent.fpcs1-1.fna&oh=6ebc0a4352f9aa24002e4ca23db78165&oe=5D89D5F5 "Classes")](https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/64418289_332224791008405_1624337248159793152_n.jpg?_nc_cat=105&_nc_oc=AQkuGO3VJ1-nRURHW-DDZPV6LrerxkOFUbNj9IjQcqt-nrz2bm189rIlues6LIOqvD0&_nc_ht=scontent.fpcs1-1.fna&oh=6ebc0a4352f9aa24002e4ca23db78165&oe=5D89D5F5 "Classes")
 
-###Tarefas alocada
-                    
-Código  | Pontos| Situação|
-------------- | -------------|-------
- Criação login de Funcionários | 7 pts| ok
-Criação Do Crud De Livros  | 4 pts |
-Construção Da Validação De Compras  | 3 pts |
-Construção Do Campo De Busca De Livros | 3 pts |
-Gerar Compra  | 2 pts | 
-Testes Finais  | 1 pts |
-Modelar para Modelo Mvp |1 pts |
-
-
 ### Tarefas alocadas
 Código  | Pontos| Situação|
 ------------- | -------------|-------
@@ -61,16 +48,5 @@ Testes Finais  | 1 pts |
 Modelar para Modelo Mvp |1 pts |
 
 
-###Fluxograma de Criação do Projeto
-
-```flow
-st=>start: Criando code
-op=>operation: Tome uma xícara de café
-cond=>condition: Deu certo Yes or No?
-e=>end: Comemore tomando café
-st->op->cond
-cond(yes)->e
-cond(no)->op
-`````
 
 ###End
