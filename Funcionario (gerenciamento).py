@@ -221,12 +221,12 @@ class ValidaCompra(Frame):
             self.qtd = self.livros[self.title]['qtd']
             self.qtd -= 1
             self.livros[self.title]['qtd'] = self.qtd
-            self.pedidos.close()
-            self.livros.close()
             messagebox.showinfo("Concluído", "Pedido confirmado!")
             self.cpf.delete(first = 0, last = END)
             if(self.livros[self.title]['qtd'] == 0):
                 del self.livros[self.title]
+            self.pedidos.close()
+            self.livros.close()
 
         
 
