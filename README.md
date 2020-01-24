@@ -1,7 +1,3 @@
-<p align="center">
-<img src="https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/64892376_332220464342171_7808059873349861376_n.jpg?_nc_cat=106&_nc_oc=AQkii1-lirgl1lqFdFFGBSN4reaLo88_-7HmHRMjfpeKUdW_0xGmyNo7XnC4iGaKRIQ&_nc_ht=scontent.fpcs1-1.fna&oh=3ce2e073fcd0055e187e41a4e4b5620e&oe=5DC184C3" alt="LivrariaSI" />
-</p>
-
 ### Introdução
 Projeto de software do sistema de uma livraria, para conclusão da disciplina Engenharia de Software II, pela Universidade Federal do Piaui - UFPI (CSHNB).
 #### Escopo do produto:
@@ -18,21 +14,6 @@ Fazendo com que o cliente sinta mais comodidade e segurança na hora de realizar
 
 ### Processos e Técnicas
 Foi utilizado para o presente desenvolvimento do projeto o modelo incremental no qual o mesmo foi avaliado em um ciclo de desenvolvimento dirigido por testes de caixa preta para compor cada incremento do projeto e dessa forma sua versão funcional.
-
-
-### Diagramas
-[![Caso e Uso](https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/65015628_332224777675073_8953840329107177472_n.jpg?_nc_cat=101&_nc_oc=AQkX7Inz2jhqOybxbgn_R6cpIp5fzIO0D4u-VkxZkGYfLHmWvkXbamHl2SF78VgMs24&_nc_ht=scontent.fpcs1-1.fna&oh=fd2b40215ebf9e439dbfaebc49aea84f&oe=5DC2685C "Caso e Uso")](https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/65015628_332224777675073_8953840329107177472_n.jpg?_nc_cat=101&_nc_oc=AQkX7Inz2jhqOybxbgn_R6cpIp5fzIO0D4u-VkxZkGYfLHmWvkXbamHl2SF78VgMs24&_nc_ht=scontent.fpcs1-1.fna&oh=fd2b40215ebf9e439dbfaebc49aea84f&oe=5DC2685C "Caso e Uso")
-
-
-
-.
-
-.
-
-
-
-
-[![Classes](https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/64418289_332224791008405_1624337248159793152_n.jpg?_nc_cat=105&_nc_oc=AQkuGO3VJ1-nRURHW-DDZPV6LrerxkOFUbNj9IjQcqt-nrz2bm189rIlues6LIOqvD0&_nc_ht=scontent.fpcs1-1.fna&oh=6ebc0a4352f9aa24002e4ca23db78165&oe=5D89D5F5 "Classes")](https://scontent.fpcs1-1.fna.fbcdn.net/v/t1.0-9/64418289_332224791008405_1624337248159793152_n.jpg?_nc_cat=105&_nc_oc=AQkuGO3VJ1-nRURHW-DDZPV6LrerxkOFUbNj9IjQcqt-nrz2bm189rIlues6LIOqvD0&_nc_ht=scontent.fpcs1-1.fna&oh=6ebc0a4352f9aa24002e4ca23db78165&oe=5D89D5F5 "Classes")
 
 ### Tarefas alocadas
 Código  | Pontos| Situação|
